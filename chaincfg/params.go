@@ -360,7 +360,7 @@ var MainNetParams = Params{
 }
 
 
-// MainNetParams defines the network parameters for the main Bitcoin network.
+// UiONetParams defines the network parameters for the main Bitcoin network.
 var UiONetParams = Params{
 	Name:        "uionet",
 	Net:         wire.UiONet,
@@ -381,7 +381,7 @@ var UiONetParams = Params{
 	CoinbaseMaturity:         100,
 	SubsidyReductionInterval: 210000,
 	TargetTimespan:           time.Hour * 24 * 14, // 14 days
-	TargetTimePerBlock:       time.Minute * 1,    // 1 minutes
+	TargetTimePerBlock:       time.Minute * 10,    // 10 minutes
 	RetargetAdjustmentFactor: 4,                   // 25% less, 400% more
 	ReduceMinDifficulty:      false,
 	MinDiffReductionTime:     0,
